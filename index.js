@@ -12,6 +12,10 @@ let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
 
 function startGame() {
+    renderGame()
+}
+
+function  renderGame() {
     sumEl.textContent = "Sum:" +" "+ sum;
     cardsEl.textContent = "Cards:" +" "+ cards[0] + " " + cards[1];
     if (sum <= 20) {        
@@ -30,7 +34,7 @@ function startGame() {
 function newCard() {
     let card = 4
     sum += card
-    startGame()
+    renderGame()
     cards.push(card);
 }
 
