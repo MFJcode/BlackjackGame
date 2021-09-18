@@ -31,6 +31,7 @@ function newCard() {
     let card = 4
     sum += card
     startGame()
+    cards.push(card);
 }
 
 
