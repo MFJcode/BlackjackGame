@@ -1,4 +1,9 @@
 
+
+let player = {
+    name: "Robert", 
+    chips: 300
+};
 let cards = [] // array - ordered list of items
 let sum = 0;
 let hasBlackJack = false;
@@ -8,6 +13,9 @@ let message = "";
 let messageEL = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
+let playerEl = document.querySelector("#player-el");
+
+playerEl.textContent = player.name + ": $" + player.chips
 
 
 function getRandomCard() {
